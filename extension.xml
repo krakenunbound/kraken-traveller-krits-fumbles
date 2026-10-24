@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="3.3" release="1">
+  <properties>
+    <name>Kraken Krits &amp; Fumbles Traveller</name>
+    <version>1.0.0</version>
+    <author>The Kraken</author>
+    <description>Telling Shots and Firefight Fumbles for Traveller (Mongoose 2E): boxcars on an attack rolls a Telling Shot, snake eyes a Firefight Fumble (unless the ruleset's Combat Mishaps option is on, which rolls the book's mishap table). Results go to chat for the Referee with tracker reminders.</description>
+    <loadorder>150</loadorder>
+    <ruleset><name>MGT2</name></ruleset>
+  </properties>
+
+  <announcement>
+    <text>Kraken Krits &amp; Fumbles Traveller v1.0.0. Settings: Options &gt; Kraken Krits &amp; Fumbles. /krakenkrits</text>
+    <font>systemfont</font>
+  </announcement>
+
+  <base>
+    <includefile source="strings/strings_krakenkrits.xml" />
+    <script name="KrakenKritsData" file="scripts/data_krakenkrits.lua" />
+    <script name="KrakenKrits" file="scripts/manager_krakenkrits.lua" />
+  </base>
+</root>
